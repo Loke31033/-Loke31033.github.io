@@ -1,188 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Lokeshwar V | SOC Analyst Portfolio</title>
-    <meta name="description" content="Entry-Level SOC Analyst Portfolio - Lokeshwar V" />
-    <meta name="author" content="Lokeshwar V" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body { font-family: 'Muli', sans-serif; }
-        h1, h2, h3, h4 { font-family: 'Saira Extra Condensed', sans-serif; }
-        .section { padding: 60px 0; }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Lokeshwar V | SOC Analyst Portfolio</title>
+<meta name="description" content="Entry-Level SOC Analyst Portfolio - Lokeshwar V" />
+<meta name="author" content="Lokeshwar V" />
+
+<!-- Fonts & Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #0d6efd;
+    --dark: #0b0f19;
+    --light: #f8f9fa;
+    --muted: #6c757d;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #212529;
+}
+
+.navbar {
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    color: var(--muted);
+    max-width: 750px;
+    margin: auto;
+}
+
+.badge-skill {
+    background: #eef2ff;
+    color: #1e40af;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin: 6px;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: transform .3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+footer {
+    background: var(--dark);
+    color: #adb5bd;
+    padding: 40px 0;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
 </head>
 
-<body id="page-top">
+<body>
 
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
 <div class="container">
-
-    <!-- HOME -->
-    <section class="section text-center">
-        <h1>Lokeshwar <span class="text-primary">V</span></h1>
-        <h4 class="mt-2">Entry-Level SOC Analyst (L1)</h4>
-        <p class="mt-3">
-            Splunk SIEM • Windows & Sysmon Log Analysis • Incident Response • IOC Extraction
-        </p>
-        <p>
-            Tamil Nadu, India |
-            <a href="mailto:lokeshwar.v06@gmail.com">lokeshwar.v06@gmail.com</a> |
-            <a href="https://www.linkedin.com/in/lokeshwar-v-011b20289" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/Loke31033" target="_blank">GitHub</a>
-        </p>
-    </section>
-
-    <hr>
-
-    <!-- ABOUT -->
-    <section class="section">
-        <h2>About Me</h2>
-        <p>
-            I am an entry-level SOC Analyst (L1) with strong hands-on experience in Splunk SIEM,
-            Windows Security and Sysmon log analysis, and SOC incident response workflows.
-            I have worked on real-world SOC simulation projects involving alert triage,
-            IOC extraction, timeline reconstruction, and evidence-based incident escalation.
-            I am ISC2 Certified in Cybersecurity (CC) and actively seeking full-time SOC Analyst roles.
-        </p>
-    </section>
-
-    <hr>
-
-    <!-- SKILLS -->
-    <section class="section">
-        <h2>Technical Skills</h2>
-
-        <h4>SIEM & Detection</h4>
-        <ul>
-            <li>Splunk SIEM (SPL Query Development)</li>
-            <li>Windows Event Logs (4624, 4625, 4688, 4698, 4657)</li>
-            <li>Sysmon</li>
-            <li>MITRE ATT&CK Framework</li>
+    <a class="navbar-brand fw-bold" href="#home">Lokeshwar V</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-
-        <h4>Threat Investigation</h4>
-        <ul>
-            <li>Alert Triage</li>
-            <li>IOC Extraction</li>
-            <li>Timeline Reconstruction</li>
-            <li>Brute-Force Detection</li>
-            <li>Persistence & Lateral Movement Analysis</li>
-            <li>Incident Escalation</li>
-        </ul>
-
-        <h4>Tools</h4>
-        <ul>
-            <li>Splunk</li>
-            <li>Wireshark</li>
-            <li>Zeek</li>
-            <li>Nmap</li>
-            <li>VirusTotal</li>
-            <li>ServiceNow</li>
-        </ul>
-
-        <h4>Scripting & OS</h4>
-        <ul>
-            <li>Python</li>
-            <li>Bash</li>
-            <li>Linux CLI</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <!-- PROJECTS -->
-    <section class="section">
-        <h2>Projects</h2>
-
-        <h4>SOC Threat Detection Project — Splunk SIEM</h4>
-        <p>
-            Built an end-to-end SOC L1 detection workflow using Splunk with Windows Security and
-            Sysmon logs. Developed 15+ SPL queries to detect brute-force attacks,
-            persistence mechanisms, lateral movement, and suspicious network activity.
-            Performed IOC extraction, forensic timeline creation, and escalation-ready SOC reporting.
-        </p>
-
-        <h4>CyberSOC Intrusion Detection Simulator</h4>
-        <p>
-            Developed a full-stack SOC simulation platform to detect SSH brute-force attacks.
-            Implemented a Python-based log correlation engine with Flask REST APIs and a React dashboard.
-            Performed IP-based session tracking, IOC generation, and automated SOC reporting (CSV/JSON).
-        </p>
-
-        <h4>PhishGuard — Email Phishing Detection Tool</h4>
-        <p>
-            Built an automated SOC email triage tool to analyze phishing indicators from .eml files.
-            Performed email header analysis, URL inspection, attachment validation,
-            and SPF/DKIM/DMARC checks with VirusTotal integration.
-        </p>
-    </section>
-
-    <hr>
-
-    <!-- EXPERIENCE -->
-    <section class="section">
-        <h2>Experience</h2>
-
-        <h4>Cyber Security Intern — Elevate Labs</h4>
-        <p><em>Sep 2024 – Nov 2024</em></p>
-        <ul>
-            <li>Monitored and investigated simulated SOC alerts related to authentication failures and suspicious activity.</li>
-            <li>Analyzed Windows Security and Sysmon logs using structured SOC workflows.</li>
-            <li>Performed alert triage, IOC extraction, timeline creation, and incident documentation.</li>
-            <li>Escalated validated incidents with supporting evidence.</li>
-            <li>Awarded <strong>Best Performer</strong> for investigation accuracy and reporting quality.</li>
-        </ul>
-
-        <h4>Ethical Hacking Intern — InLighnX Global Pvt. Ltd.</h4>
-        <p><em>Sep 2024 – Dec 2024</em></p>
-        <ul>
-            <li>Conducted vulnerability assessments and basic web application testing.</li>
-            <li>Identified SQL Injection and XSS vulnerabilities in lab environments.</li>
-            <li>Prepared remediation documentation aligned with security best practices.</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <!-- CERTIFICATIONS -->
-    <section class="section">
-        <h2>Certifications</h2>
-        <ul>
-            <li>ISC2 Certified in Cybersecurity (CC) — Passed</li>
-            <li>Google Cybersecurity Professional Certificate</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <!-- RESUME -->
-    <section class="section">
-        <h2>Resume</h2>
-        <p>
-            <a class="btn btn-primary" href="Lokeshwar_V_L1_SOC_Analyst_Resume.pdf" target="_blank">
-                Download Resume (PDF)
-            </a>
-        </p>
-    </section>
-
-    <hr>
-
-    <!-- CONTACT -->
-    <section class="section text-center">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:lokeshwar.v06@gmail.com">lokeshwar.v06@gmail.com</a></p>
-        <p>
-            <a href="https://www.linkedin.com/in/lokeshwar-v-011b20289" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/Loke31033" target="_blank">GitHub</a>
-        </p>
-    </section>
-
+    </div>
 </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero section">
+<div class="container fade-up">
+    <h1>Lokeshwar <span class="text-primary">V</span></h1>
+    <h5 class="mt-2">Entry-Level SOC Analyst (L1)</h5>
+    <p class="mt-3">
+        Splunk SIEM • Windows & Sysmon Log Analysis • Incident Response • IOC Extraction
+    </p>
+    <p class="mt-2">
+        Tamil Nadu, India |
+        <a href="mailto:lokeshwar.v06@gmail.com">lokeshwar.v06@gmail.com</a> |
+        <a href="https://www.linkedin.com/in/lokeshwar-v-011b20289" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Loke31033" target="_blank">GitHub</a>
+    </p>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<div class="container fade-up">
+<h2 class="section-title">About Me</h2>
+<p>
+I am an entry-level SOC Analyst (L1) with strong hands-on experience in Splunk SIEM,
+Windows Security and Sysmon log analysis, and SOC incident response workflows.
+I have worked on real-world SOC simulation projects involving alert triage,
+IOC extraction, timeline reconstruction, and evidence-based incident escalation.
+I am ISC2 Certified in Cybersecurity (CC) and actively seeking full-time SOC Analyst roles.
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section bg-light">
+<div class="container fade-up">
+<h2 class="section-title">Technical Skills</h2>
+
+<h5>SIEM & Detection</h5>
+<span class="badge-skill">Splunk (SPL)</span>
+<span class="badge-skill">Windows Event Logs</span>
+<span class="badge-skill">Sysmon</span>
+<span class="badge-skill">MITRE ATT&CK</span>
+
+<h5 class="mt-4">Threat Investigation</h5>
+<span class="badge-skill">Alert Triage</span>
+<span class="badge-skill">IOC Extraction</span>
+<span class="badge-skill">Timeline Reconstruction</span>
+<span class="badge-skill">Brute-Force Detection</span>
+<span class="badge-skill">Incident Escalation</span>
+
+<h5 class="mt-4">Tools & Scripting</h5>
+<span class="badge-skill">Wireshark</span>
+<span class="badge-skill">Zeek</span>
+<span class="badge-skill">Nmap</span>
+<span class="badge-skill">VirusTotal</span>
+<span class="badge-skill">ServiceNow</span>
+<span class="badge-skill">Python</span>
+<span class="badge-skill">Bash</span>
+<span class="badge-skill">Linux CLI</span>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+<div class="container fade-up">
+<h2 class="section-title">Projects</h2>
+
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card p-4">
+<h5>SOC Threat Detection — Splunk</h5>
+<p>
+End-to-end SOC L1 detection using Windows & Sysmon logs,
+15+ SPL queries, IOC extraction, and escalation-ready reports.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>CyberSOC Intrusion Simulator</h5>
+<p>
+Python-based log correlation, Flask APIs, React dashboard,
+SSH brute-force detection and automated SOC reporting.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>PhishGuard</h5>
+<p>
+Email phishing detection using header analysis,
+URL inspection, SPF/DKIM/DMARC validation and VirusTotal.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section bg-light">
+<div class="container fade-up">
+<h2 class="section-title">Experience</h2>
+
+<h5>Cyber Security Intern — Elevate Labs</h5>
+<p><em>Sep 2024 – Nov 2024</em></p>
+<ul>
+<li>SOC alert triage and Windows/Sysmon log analysis</li>
+<li>IOC extraction, timeline creation, incident escalation</li>
+<li>Awarded <strong>Best Performer</strong></li>
+</ul>
+
+<h5 class="mt-4">Ethical Hacking Intern — InLighnX</h5>
+<p><em>Sep 2024 – Dec 2024</em></p>
+<ul>
+<li>Vulnerability assessment (SQLi, XSS)</li>
+<li>Remediation documentation</li>
+</ul>
+</div>
+</section>
+
+<!-- RESUME -->
+<section class="section text-center">
+<div class="container fade-up">
+<h2 class="section-title">Resume</h2>
+<a class="btn btn-primary btn-lg"
+href="Lokeshwar_V_L1_SOC_Analyst_Resume.pdf" target="_blank">
+<i class="fa fa-download"></i> Download Resume
+</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+<div class="container text-center">
+<p>📧 lokeshwar.v06@gmail.com</p>
+<p>
+<a href="https://www.linkedin.com/in/lokeshwar-v-011b20289" class="text-light me-3">LinkedIn</a>
+<a href="https://github.com/Loke31033" class="text-light">GitHub</a>
+</p>
+<p class="mt-3">&copy; 2026 Lokeshwar V</p>
+</div>
+</footer>
+
+<!-- JS -->
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-  
